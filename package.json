@@ -5,9 +5,13 @@
   "author": "João Vinícius <vi.peres@icloud.com>",
   "private": true,
   "license": "MIT",
+  "scripts": {
+    "test:all": "yarn workspace @github-actions/ms-users test && yarn workspace @github-actions/ms-sales test && yarn workspace @github-actions/ms-products test && yarn workspace @github-actions/shop test"
+  },
   "workspaces": {
     "packages": [
-      "apps/*"
+      "apps/microservices/*",
+      "apps/web/*"
     ]
   },
   "devDependencies": {

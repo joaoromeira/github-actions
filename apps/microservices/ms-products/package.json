@@ -1,6 +1,6 @@
 {
-  "name": "@github-actions/ms-sales",
-  "version": "1.0.0",
+  "name": "@github-actions/ms-products",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
     "ts-jest": "^27.1.4"
   }
 }

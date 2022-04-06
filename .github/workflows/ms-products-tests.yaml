@@ -3,7 +3,7 @@ name: ms-products tests
 on:
   pull_request:
     paths:
-      - "apps/ms-products/**"
+      - "apps/microservices/ms-products/**"
 
 jobs:
   Test:
@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies
-        run: yarn --cwd apps/ms-products
+        run: yarn --cwd apps/microservices/ms-products
 
       - name: Test
-        run: yarn --cwd apps/ms-products test
+        run: yarn --cwd apps/microservices/ms-products test

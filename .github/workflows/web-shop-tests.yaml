@@ -1,9 +1,9 @@
-name: ms-sales tests
+name: web shop tests
 
 on:
   pull_request:
     paths:
-      - "apps/microservices/ms-sales/**"
+      - "apps/web/shop/**"
 
 jobs:
   Test:
@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies
-        run: yarn --cwd apps/microservices/ms-sales
+        run: yarn --cwd apps/web/shop
 
       - name: Test
-        run: yarn --cwd apps/microservices/ms-sales test
+        run: yarn --cwd apps/web/shop test
