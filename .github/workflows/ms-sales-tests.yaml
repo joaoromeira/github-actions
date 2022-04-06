@@ -5,8 +5,7 @@ on:
   pull_request:
   push:
     paths:
-      - "apps/ms-sales"
-    branches: [dev]
+      - "apps/ms-sales/**"
 
 jobs:
   Test:
