@@ -1,8 +1,8 @@
 export const getProducts = () => {
-  return [
-    {
-      id: 1,
-      product: 'Iphone 12'
-    }
-  ]
+  const products = [{
+    id: 1,
+    product: 'Iphone 12'
+  }]
+
+  return products
 }
