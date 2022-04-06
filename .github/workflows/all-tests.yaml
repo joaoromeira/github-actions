@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies
-        run: yarn
+        run: yarn update:all
 
       - name: Test
-        run: yarn test
+        run: yarn test:all
