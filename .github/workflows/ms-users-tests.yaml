@@ -3,7 +3,7 @@ name: ms-users tests
 on:
   pull_request:
     paths:
-      - "apps/ms-users/**"
+      - "apps/microservices/ms-users/**"
 
 jobs:
   Test:
@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies
-        run: yarn --cwd apps/ms-users
+        run: yarn --cwd apps/microservices/ms-users
 
       - name: Test
-        run: yarn --cwd apps/ms-users test
+        run: yarn --cwd apps/microservices/ms-users test

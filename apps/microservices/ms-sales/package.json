@@ -1,5 +1,5 @@
 {
-  "name": "@github-actions/ms-users",
+  "name": "@github-actions/ms-sales",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
     "ts-jest": "^27.1.4"
   }
 }
