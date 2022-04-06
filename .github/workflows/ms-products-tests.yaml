@@ -34,7 +34,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Install dependencies
-        run: yarn workspace @github-actions/ms-products
+        run: yarn workspace --cwd apps/ms-products
 
       - name: Test
-        run: yarn workspace @github-actions/ms-products test
+        run: yarn workspace --cwd apps/ms-products test
