@@ -1,11 +1,10 @@
 export const getUsers = () => {
-  const id = 1
-  const name = 'João'
-
-  return [
+  const users = [
     {
-      id,
-      name
+      id: 1,
+      name: 'João'
     }
   ]
+
+  return users
 }
