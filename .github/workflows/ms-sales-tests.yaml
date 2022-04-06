@@ -4,9 +4,10 @@ on:
   workflow_dispatch:
   pull_request:
   push:
+    branches:
+      - dev
     paths:
-      - "apps/ms-sales"
-    branches: [dev]
+      - "apps/ms-sales/**"
 
 jobs:
   Test:
