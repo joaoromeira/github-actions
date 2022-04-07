@@ -2,6 +2,8 @@ name: web shop tests
 
 on:
   pull_request:
+    branches-ignore:
+      - release
     paths:
       - "apps/web/shop/**"
 
