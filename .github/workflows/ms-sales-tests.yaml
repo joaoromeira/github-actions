@@ -2,6 +2,8 @@ name: ms-sales tests
 
 on:
   pull_request:
+    branches-ignore:
+      - release
     paths:
       - "apps/microservices/ms-sales/**"
 

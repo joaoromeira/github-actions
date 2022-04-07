@@ -2,6 +2,8 @@ name: ms-products tests
 
 on:
   pull_request:
+    branches-ignore:
+      - release
     paths:
       - "apps/microservices/ms-products/**"
 
