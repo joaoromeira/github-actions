@@ -3,7 +3,7 @@ name: all tests
 on:
   pull_request:
     branches:
-      - dev
+      - dev2
 
 jobs:
   Test:
