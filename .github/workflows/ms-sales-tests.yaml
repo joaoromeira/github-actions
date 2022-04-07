@@ -5,6 +5,7 @@ on:
     branches-ignore:
       - release
     paths:
+      - "apps/microservices/ms-products/**"
       - "apps/microservices/ms-sales/**"
 
 jobs:
