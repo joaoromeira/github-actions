@@ -6,6 +6,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
+    "update:all": "yarn workspace @github-actions/ms-users install && yarn workspace @github-actions/ms-sales install && yarn workspace @github-actions/ms-products install && yarn workspace @github-actions/shop install",
     "test:all": "yarn workspace @github-actions/ms-users test && yarn workspace @github-actions/ms-sales test && yarn workspace @github-actions/ms-products test && yarn workspace @github-actions/shop test"
   },
   "workspaces": {
