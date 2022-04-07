@@ -3,6 +3,7 @@ name: ms-sales tests
 on:
   pull_request:
     paths:
+      - "apps/microservices/ms-products/**"
       - "apps/microservices/ms-sales/**"
 
 jobs:
