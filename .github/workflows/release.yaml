@@ -1,11 +1,9 @@
-name: ms-users tests
+name: release
 
 on:
   pull_request:
-    branches-ignore:
-      - release
-    paths:
-      - "apps/microservices/ms-users/**"
+    branch:
+      - "release"
 
 jobs:
   Test:
@@ -45,7 +43,10 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies
-        run: yarn --cwd apps/microservices/ms-users
+        run: yarn
 
       - name: Test
-        run: yarn --cwd apps/microservices/ms-users test
+        run: yarn test:cov
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3

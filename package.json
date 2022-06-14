@@ -6,7 +6,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "test:all": "yarn workspace @github-actions/ms-users test && yarn workspace @github-actions/ms-sales test && yarn workspace @github-actions/ms-products test && yarn workspace @github-actions/shop test"
+    "test:all": "yarn workspace @github-actions/ms-users test && yarn workspace @github-actions/ms-sales test && yarn workspace @github-actions/ms-products test && yarn workspace @github-actions/shop test",
+    "test:cov": "yarn workspace @github-actions/ms-users test:cov && yarn workspace @github-actions/ms-sales test:cov && yarn workspace @github-actions/ms-products test:cov && yarn workspace @github-actions/shop test:cov"
   },
   "workspaces": {
     "packages": [
