@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "yarn tsc index.ts",
-    "test": "jest --no-cache"
+    "test": "jest --no-cache",
+    "test:cov": "./node_modules/.bin/jest --ci --coverage --runInBand"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",

@@ -1,14 +1,14 @@
-name: all tests
+name: release
 
 on:
-  pull_request:
+  push:
     branches:
-      - dev2
+      - "release"
 
 jobs:
   Test:
     runs-on: ubuntu-latest
-    name: All Unit Tests
+    name: Unit Tests
     strategy:
       matrix:
         node-version: ["14.x"]
@@ -43,7 +43,10 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Install dependencies
-        run: yarn update:all
+        run: yarn
 
       - name: Test
-        run: yarn test:all
+        run: yarn test:cov
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v3
